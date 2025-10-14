@@ -3,9 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Dr. João Silva — Ortopedia e Traumatologia</title>
+  <meta name="description" content="Atendimento especializado em ortopedia e traumatologia com o Dr. João Silva. Cuide da sua saúde e agende sua consulta online.">
+  <meta name="keywords" content="ortopedia, traumatologia, médico, consulta, Dr João Silva, reabilitação, dor nas articulações">
+  <meta name="author" content="Dr. João Silva">
+
+  <!-- OPEN GRAPH (para redes sociais como WhatsApp, Facebook e Instagram) -->
+  <meta property="og:title" content="Dr. João Silva — Ortopedia e Traumatologia">
+  <meta property="og:description" content="Atendimento médico especializado com o Dr. João Silva. Ortopedia, traumatologia e reabilitação com excelência.">
+  <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-ArcpIx6leKLsoIM2Pzd-7W-NVfImpsnaLLTkizRVw&s=10">
+  <meta property="og:url" content="https://seudominio.com">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!--  TWITTER CARD (para exibição bonita no X/Twitter) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr. João Silva — Ortopedia e Traumatologia">
+  <meta name="twitter:description" content="Cuidando da sua saúde com experiência e dedicação.">
+  <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-ArcpIx6leKLsoIM2Pzd-7W-NVfImpsnaLLTkizRVw&s=10">
+
+  <!--  FAVICON -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!--  CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <div class="logo">Dr. João Silva</div>
@@ -14,9 +38,8 @@
         <li><a href="#cta">Agendar consulta</a></li>
         <li><a href="#sobremim">Sobre</a></li>
         <li><a href="#servicos">Serviços</a></li>
-         <li><a href="#depoimentos">Avaliações</a></li>
+        <li><a href="#depoimentos">Avaliações</a></li>
         <li><a href="#rodape">Contato</a></li>
-       
       </ul>
     </nav>
   </header>
@@ -31,33 +54,33 @@
   </section>
 
   <section id="cta" class="cta">
-  <h2>Agende sua consulta</h2>
-  <p>Rápido e fácil!</p>
-  <button class="cta-btn">Agendar agora</button>
-</section>
+    <h2>Agende sua consulta</h2>
+    <p>Rápido e fácil!</p>
+    <button class="cta-btn">Agendar agora</button>
+  </section>
 
-<!-- Modal de Agendamento -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Agendar Consulta</h2>
-    <form>
-      <label>Nome:</label>
-      <input type="text" required>
+  <!-- Modal de Agendamento -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Agendar Consulta</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" required>
 
-      <label>Email:</label>
-      <input type="email" required>
+        <label>Email:</label>
+        <input type="email" required>
 
-      <label>Telefone:</label>
-      <input type="tel" required>
+        <label>Telefone:</label>
+        <input type="tel" required>
 
-      <label>Data:</label>
-      <input type="date" required>
+        <label>Data:</label>
+        <input type="date" required>
 
-      <button type="submit">Enviar</button>
-    </form>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
   </div>
-</div>
 
   <section id="sobremim" class="sobremim">
     <div class="descricao">
@@ -149,22 +172,23 @@
     <div class="rodape-direitos">
       © 2025 Dr. João Silva — Todos os direitos reservados.
     </div>
-  </footer>
-<script>
-  const modal = document.getElementById('modal');
-  const btn = document.querySelector('.cta-btn');
-  const span = document.querySelector('.close');
+  </section>
 
-  // Abrir modal
-  btn.onclick = () => modal.style.display = 'flex';
+  <script>
+    const modal = document.getElementById('modal');
+    const btn = document.querySelector('.cta-btn');
+    const span = document.querySelector('.close');
 
-  // Fechar modal ao clicar no "x"
-  span.onclick = () => modal.style.display = 'none';
+    // Abrir modal
+    btn.onclick = () => modal.style.display = 'flex';
 
-  // Fechar modal ao clicar fora do conteúdo
-  window.onclick = (e) => {
-    if (e.target == modal) modal.style.display = 'none';
-  };
-</script>
+    // Fechar modal ao clicar no "x"
+    span.onclick = () => modal.style.display = 'none';
+
+    // Fechar modal ao clicar fora do conteúdo
+    window.onclick = (e) => {
+      if (e.target == modal) modal.style.display = 'none';
+    };
+  </script>
 </body>
-</html>
+  </html>
