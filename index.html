@@ -11,9 +11,12 @@
     <div class="logo">Dr. João Silva</div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#cta">Agendar consulta</a></li>
+        <li><a href="#sobremim">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+         <li><a href="#depoimentos">Avaliações</a></li>
+        <li><a href="#rodape">Contato</a></li>
+       
       </ul>
     </nav>
   </header>
@@ -27,13 +30,36 @@
     </div>
   </section>
 
-  <section class="cta">
-    <h2>Agende sua consulta</h2>
-    <p>Rápido e fácil!</p>
-    <button class="cta-btn">Agendar agora</button>
-  </section>
+  <section id="cta" class="cta">
+  <h2>Agende sua consulta</h2>
+  <p>Rápido e fácil!</p>
+  <button class="cta-btn">Agendar agora</button>
+</section>
 
-  <section class="sobremim">
+<!-- Modal de Agendamento -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Agendar Consulta</h2>
+    <form>
+      <label>Nome:</label>
+      <input type="text" required>
+
+      <label>Email:</label>
+      <input type="email" required>
+
+      <label>Telefone:</label>
+      <input type="tel" required>
+
+      <label>Data:</label>
+      <input type="date" required>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</div>
+
+  <section id="sobremim" class="sobremim">
     <div class="descricao">
       🩺 <strong>Dr. João Silva — Clínico Geral</strong><br><br>
       Com mais de 10 anos de experiência na medicina, o Dr. João Silva é reconhecido pelo atendimento humanizado e pela dedicação em cuidar da saúde de cada paciente de forma individual e completa.<br><br>
@@ -42,7 +68,7 @@
     </div>
   </section>
 
-  <section class="servicos">
+  <section id="servicos" class="servicos">
     <h2>Serviços Médicos Oferecidos</h2>
     <div class="servicos-container">
       <div class="servico">
@@ -73,7 +99,7 @@
 
   <section class="depoimentos">
     <h2>O que dizem os pacientes</h2>
-    <div class="depoimentos-container">
+    <div id="depoimentos" class="depoimentos-container">
       <div class="depoimento">
         <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Paciente 1">
         <h3>Ana Rodrigues</h3>
@@ -94,7 +120,7 @@
     </div>
   </section>
 
-  <footer class="rodape">
+  <section id="rodape" class="rodape">
     <div class="rodape-container">
       <div class="rodape-coluna">
         <h3>Contato</h3>
@@ -124,5 +150,21 @@
       © 2025 Dr. João Silva — Todos os direitos reservados.
     </div>
   </footer>
+<script>
+  const modal = document.getElementById('modal');
+  const btn = document.querySelector('.cta-btn');
+  const span = document.querySelector('.close');
+
+  // Abrir modal
+  btn.onclick = () => modal.style.display = 'flex';
+
+  // Fechar modal ao clicar no "x"
+  span.onclick = () => modal.style.display = 'none';
+
+  // Fechar modal ao clicar fora do conteúdo
+  window.onclick = (e) => {
+    if (e.target == modal) modal.style.display = 'none';
+  };
+</script>
 </body>
 </html>
