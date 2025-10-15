@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
+  <!-- 🏷️ TÍTULO E SEO -->
   <title>Dr. João Silva — Ortopedia e Traumatologia</title>
   <meta name="description" content="Atendimento especializado em ortopedia e traumatologia com o Dr. João Silva. Cuide da sua saúde e agende sua consulta online.">
   <meta name="keywords" content="ortopedia, traumatologia, médico, consulta, Dr João Silva, reabilitação, dor nas articulações">
   <meta name="author" content="Dr. João Silva">
 
-  <!-- OPEN GRAPH (para redes sociais como WhatsApp, Facebook e Instagram) -->
+  <!-- 🌐 METADADOS PARA REDES SOCIAIS -->
   <meta property="og:title" content="Dr. João Silva — Ortopedia e Traumatologia">
   <meta property="og:description" content="Atendimento médico especializado com o Dr. João Silva. Ortopedia, traumatologia e reabilitação com excelência.">
   <meta property="og:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-ArcpIx6leKLsoIM2Pzd-7W-NVfImpsnaLLTkizRVw&s=10">
@@ -17,20 +18,24 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
 
-  <!--  TWITTER CARD (para exibição bonita no X/Twitter) -->
+  <!-- 🐦 METADADOS PARA TWITTER -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Dr. João Silva — Ortopedia e Traumatologia">
   <meta name="twitter:description" content="Cuidando da sua saúde com experiência e dedicação.">
   <meta name="twitter:image" content="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-ArcpIx6leKLsoIM2Pzd-7W-NVfImpsnaLLTkizRVw&s=10">
 
-  <!--  FAVICON -->
+  <!-- 🔖 FAVICON -->
   <link rel="icon" type="image/png" href="favicon.png">
 
-  <!--  CSS -->
+  <!-- 🎨 CSS EXTERNO -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- 🧩 ÍCONES FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
+  <!-- 🧭 CABEÇALHO -->
   <header>
     <div class="logo">Dr. João Silva</div>
     <nav>
@@ -44,6 +49,7 @@
     </nav>
   </header>
 
+  <!-- 🏥 SEÇÃO HERO -->
   <section class="hero">
     <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi-ArcpIx6leKLsoIM2Pzd-7W-NVfImpsnaLLTkizRVw&s=10" alt="Imagem de médico">
     <div class="hero-text">
@@ -53,63 +59,59 @@
     </div>
   </section>
 
+  <!-- 📅 SEÇÃO CTA -->
   <section id="cta" class="cta">
     <h2>Agende sua consulta</h2>
     <p>Rápido e fácil!</p>
-    <button class="cta-btn">Agendar agora</button>
+
+    <form action="https://wa.me/5511999999999" method="get" target="_blank">
+      <input type="hidden" name="text" value="Olá, gostaria de agendar uma consulta.">
+
+      <label>
+        Seu nome:
+        <input type="text" name="nome" placeholder="Nome" required>
+      </label>
+
+      <label>
+        Telefone:
+        <input type="tel" name="telefone" placeholder="(xx) xxxxx-xxxx" required>
+      </label>
+
+      <button type="submit" class="cta-btn">Agendar por WhatsApp</button>
+    </form>
   </section>
 
-  <!-- Modal de Agendamento -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <h2>Agendar Consulta</h2>
-      <form>
-        <label>Nome:</label>
-        <input type="text" required>
-
-        <label>Email:</label>
-        <input type="email" required>
-
-        <label>Telefone:</label>
-        <input type="tel" required>
-
-        <label>Data:</label>
-        <input type="date" required>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </div>
-
+  <!-- 🩺🏥⚕️SOBRE MIM -->
   <section id="sobremim" class="sobremim">
     <div class="descricao">
       🩺 <strong>Dr. João Silva — Clínico Geral</strong><br><br>
-      Com mais de 10 anos de experiência na medicina, o Dr. João Silva é reconhecido pelo atendimento humanizado e pela dedicação em cuidar da saúde de cada paciente de forma individual e completa.<br><br>
+      Com mais de 10 anos de experiência na medicina, o <em class="destaque">Dr. João Silva</em> é reconhecido pelo atendimento humanizado e pela dedicação em cuidar da saúde de cada paciente de forma individual e completa.<br><br>
       Seu compromisso é oferecer diagnósticos precisos, tratamentos eficazes e orientações preventivas, sempre com empatia e atenção aos detalhes.<br><br>
       Atende pacientes de todas as idades, com foco em promoção da saúde, prevenção de doenças e melhoria da qualidade de vida.
     </div>
   </section>
 
+  <!-- ⚕️ SERVIÇOS -->
   <section id="servicos" class="servicos">
     <h2>Serviços Médicos Oferecidos</h2>
+
     <div class="servicos-container">
       <div class="servico">
         <img src="https://cdn-icons-png.flaticon.com/512/2966/2966486.png" alt="Consulta médica">
         <h3>Consultas Clínicas</h3>
-        <p>Avaliação completa da sua saúde, com diagnóstico preciso e orientações personalizadas para cada paciente.</p>
+        <p>Avaliação completa da sua saúde, com diagnóstico preciso e orientações personalizadas.</p>
       </div>
 
       <div class="servico">
         <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Ortopedia e traumatologia">
         <h3>Ortopedia e Traumatologia</h3>
-        <p>Tratamento de lesões ósseas, musculares e articulares, promovendo sua recuperação com segurança e eficiência.</p>
+        <p>Tratamento de lesões ósseas, musculares e articulares, promovendo recuperação eficiente.</p>
       </div>
 
       <div class="servico">
         <img src="https://cdn-icons-png.flaticon.com/512/3063/3063183.png" alt="Exames preventivos">
         <h3>Exames Preventivos</h3>
-        <p>Check-ups regulares para detectar doenças precocemente e manter sua saúde sempre em dia.</p>
+        <p>Check-ups regulares para detectar doenças precocemente e manter sua saúde em dia.</p>
       </div>
 
       <div class="servico">
@@ -120,8 +122,10 @@
     </div>
   </section>
 
+  <!-- 💬 DEPOIMENTOS -->
   <section class="depoimentos">
     <h2>O que dizem os pacientes</h2>
+
     <div id="depoimentos" class="depoimentos-container">
       <div class="depoimento">
         <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Paciente 1">
@@ -143,8 +147,11 @@
     </div>
   </section>
 
+  <!-- 📞 RODAPÉ -->
   <section id="rodape" class="rodape">
     <div class="rodape-container">
+      
+      <!-- 📬 CONTATO -->
       <div class="rodape-coluna">
         <h3>Contato</h3>
         <p>📍 Rua da Saúde, 123 — São Paulo, SP</p>
@@ -152,15 +159,17 @@
         <p>✉️ contato@drjoaosilva.com</p>
       </div>
 
+      <!-- 🌐 REDES SOCIAIS -->
       <div class="rodape-coluna">
         <h3>Redes Sociais</h3>
         <div class="redes-sociais">
-          <a href="#" target="_blank">Facebook</a>
-          <a href="#" target="_blank">Instagram</a>
-          <a href="#" target="_blank">LinkedIn</a>
+          <a href="javascript:void(0)" target="_blank"><i class="fab fa-facebook"></i> Facebook</a><br>
+          <a href="javascript:void(0)" target="_blank"><i class="fab fa-instagram"></i> Instagram</a><br>
+          <a href="javascript:void(0)" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </div>
       </div>
 
+      <!-- ⏰ HORÁRIO -->
       <div class="rodape-coluna">
         <h3>Horário de Atendimento</h3>
         <p>Segunda a Sexta: 8h às 18h</p>
@@ -173,22 +182,5 @@
       © 2025 Dr. João Silva — Todos os direitos reservados.
     </div>
   </section>
-
-  <script>
-    const modal = document.getElementById('modal');
-    const btn = document.querySelector('.cta-btn');
-    const span = document.querySelector('.close');
-
-    // Abrir modal
-    btn.onclick = () => modal.style.display = 'flex';
-
-    // Fechar modal ao clicar no "x"
-    span.onclick = () => modal.style.display = 'none';
-
-    // Fechar modal ao clicar fora do conteúdo
-    window.onclick = (e) => {
-      if (e.target == modal) modal.style.display = 'none';
-    };
-  </script>
 </body>
-  </html>
+              </html>
